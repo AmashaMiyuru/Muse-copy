@@ -1,0 +1,150 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #e7fdf5, #f5ffe1);
+    color: #333;
+    padding: 0;
+}
+
+/* Main Title */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #2e7d59;
+    margin: 20px 0;
+}
+
+/* Create Event Button */
+.create-event-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.create-event-btn {
+    padding: 10px 20px;
+    background-color: #32b77e;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.create-event-btn:hover {
+    background-color: #289364;
+}
+
+/* Events Container */
+.events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.event {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event h2 {
+    font-size: 24px;
+    color: #1a6633;
+    margin-bottom: 10px;
+}
+
+.event p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Join Button */
+.join-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd700;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.join-btn:hover {
+    background-color: #e6c200;
+}
+
+/* Joined People Section */
+.joined-people {
+    margin-top: 20px;
+    background-color: #f4f9f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.joined-people h3 {
+    font-size: 18px;
+    color: #2e7d59;
+    margin-bottom: 10px;
+}
+
+.joined-people ul {
+    list-style: none;
+    padding: 0;
+}
+
+.joined-people ul li {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-container {
+        padding: 10px;
+    }
+
+    .create-event-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .event h2 {
+        font-size: 20px;
+    }
+
+    .event p {
+        font-size: 14px;
+    }
+
+    .join-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .joined-people h3 {
+        font-size: 16px;
+    }
+
+    .joined-people ul li {
+        font-size: 13px;
+    }
+}
