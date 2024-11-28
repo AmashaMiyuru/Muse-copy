@@ -1,0 +1,68 @@
+section ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Optional: Distributes items evenly */
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container img {
+    width: 200px; 
+    height: 100px;
+    margin-right: 10px;
+}
+.search-menu {
+    
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+    width: 1000px;
+ } 
+.search-menu input{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-color: white;
+}
+
+.search-menu button{
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+}
+
+.search-button:hover {
+    background-color: black;
+}
+
+
+.login-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border: 2px solid orange;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color:orange;
+}
+
+.login-button a:hover {
+    background-color: black;
+    color: white;
+    border: black;
+}

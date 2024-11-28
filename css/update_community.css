@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed; /* Fix sidebar to the left */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Lower than form */
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Sidebar Link Styling */
+.sidebar nav ul li a {
+    color: #333; /* Sets text color */
+    text-decoration: none; /* Removes underline */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    display: block; /* Makes the entire list item clickable */
+    padding: 10px 0;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 8px; /* Adjust spacing */
+    font-size: 18px;   /* Adjust icon size */
+}
+
+.sidebar nav ul li a:hover {
+    color: #4a90e2; /* Changes color on hover */
+}
+
+/* Active Link Styling */
+.sidebar nav ul li.active a {
+    color: black;
+    font-weight: 600;
+}
+
+.sidebar nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo-container img {
+    width: 200px; 
+    height: 100px;
+    margin-right: 10px;
+}
+
+/* Form Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Layering */
+    z-index: 2; /* Ensure it's in front of sidebar */
+    margin-left: auto; /* Push form to the center */
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab7;
+}
+
+/* Error Messages */
+p {
+    font-size: 0.9em;
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
